@@ -1,13 +1,13 @@
 import { cn } from '@/lib/utils';
 import { ArrowRight, Menu } from 'lucide-react';
 import dynamic from 'next/dynamic';
-import AnimatedGridPattern from '../ui/animated-grid-pattern';
-import TypingAnimation from '../ui/typing-animation';
+import AnimatedGridPattern from '@/components/ui/animated-grid-pattern';
+import TypingAnimation from '@/components/ui/typing-animation';
 import Image from 'next/image';
-import { AnimateElement } from '../ui/animated-wrapper';
-import { GetStartedButton } from '../ui/shiny-button';
+import { AnimateElement } from '@/components/ui/animated-wrapper';
+import { GetStartedButton } from '@/components/ui/shiny-button';
 
-const DynamicVideo = dynamic(() => import('./video'), {
+const DynamicVideo = dynamic(() => import('@/components/header/video'), {
   ssr: false,
 });
 
@@ -43,16 +43,16 @@ export default function Hero() {
               className="text-xl font-bold leading-[30px] sm:text-[40px] sm:leading-[54px] lg:text-[48px] lg:leading-[64px] xl:text-[56px] xl:leading-[82px]"
               style={{ letterSpacing: '0.15px' }}
             >
-              <span className="block">Develop, deploy, and scale</span>
-              <span className="block">in one seamless cloud platform</span>
+              <span className="block">Ship 10x Faster with</span>
+              <span className="block">Sealos DevBox</span>
             </div>
             <div
               className="mx-auto my-6 max-w-[700px] text-xs font-medium text-custom-secondary-text sm:text-base"
               style={{ letterSpacing: '0.15px' }}
             >
-              Simplify your entire development lifecycle, with Sealos. We remove
-              the complexity so you can focus on building and growing your apps
-              effortlessly.
+              In just one-click DevBox enables you to spin up full-stack
+              development environments. Develop, test, release, deploy, and
+              scale all in one seamless workflow.
             </div>
 
             <div className="flex items-center justify-center gap-4 text-base font-medium">

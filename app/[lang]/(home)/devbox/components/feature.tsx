@@ -1,26 +1,30 @@
 import { cn } from '@/lib/utils';
-import { DatabaseIcon, SealosIcon, ObjectStorageIcon } from '../ui/icons';
+import {
+  DatabaseIcon,
+  SealosIcon,
+  ObjectStorageIcon,
+} from '@/components/ui/icons';
 import Image from 'next/image';
-import { MagicCard } from '../ui/magic-card';
-import { AnimateElement } from '../ui/animated-wrapper';
+import { MagicCard } from '@/components/ui/magic-card';
+import { AnimateElement } from '@/components/ui/animated-wrapper';
 
 const features = [
   {
-    title: 'Enterprise Cloud OS',
+    title: 'Effortless Dev Environments',
     description:
-      'A powerful production-ready Kubernetes platform with multi-cloud support. Deploy and orchestrate containers effortlessly across AWS, GCP, and Azure with one-click cluster creation.',
+      'Eliminate setup friction with pre-configured development environments in just one-click with seamless integration with your favorite IDE.',
     icon: <SealosIcon />,
   },
   {
-    title: 'Managed Database Suite',
+    title: 'Integrated Databases',
     description:
-      'Production-ready databases with 99.99% uptime guarantee. Automated failover, backups, and scaling for MySQL, PostgreSQL, MongoDB, Redis with zero ops overhead.',
+      'Instantly provision development databases with automated backups, snapshots, and scaling. Connect effortlessly to MySQL, PostgreSQL, MongoDB, and Redis.',
     icon: <DatabaseIcon />,
   },
   {
-    title: 'Global Object Storage',
+    title: 'Cloud-Native Storage',
     description:
-      'Secure, enterprise-grade storage with built-in encryption, versioning, and disaster recovery. S3 compatible with native SDKs for Python, Go, Java, and Node.js.',
+      'Persistent, scalable object storage for your development needs. Seamlessly store and manage assets, logs, and data with S3 compatibility and built-in security.',
     icon: <ObjectStorageIcon />,
   },
 ];
@@ -77,7 +81,7 @@ export default function Feature() {
     <div className="mt-52">
       <AnimateElement type="slideUp">
         <div className="text-center text-base font-bold text-black sm:text-4xl">
-          Cloud-Native Infrastructure
+          Cloud-Native Development
         </div>
       </AnimateElement>
 

@@ -35,6 +35,10 @@ export const HeaderLinks = [
     url: 'https://template.usw.sealos.io',
   },
   {
+    text: 'DevBox',
+    url: '/devbox',
+  },
+  {
     text: 'Docs',
     url: '/docs',
   },
@@ -42,10 +46,10 @@ export const HeaderLinks = [
   //   text: 'Pricing',
   //   url: '/pricing',
   // },
-  {
-    text: 'Blog',
-    url: '/blog',
-  },
+  // {
+  //   text: 'Blog',
+  //   url: '/blog',
+  // },
   {
     text: 'Contact',
     url: 'mailto:contact@sealos.io',
